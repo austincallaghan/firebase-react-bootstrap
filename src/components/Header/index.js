@@ -27,34 +27,12 @@ const HeaderInner = ({
         <div className="header--burger" onClick={toggleMobileMenu}>
           <img src={WhiteMenu} />
         </div>
-        <div className="header--headline">Tattoo Ink</div>
       </div>
 
-      {authUser ? (
-        <div className="header--dropdown">
-          <span>{authUser.username}</span>
-          <div className="header--content">
-            <a onClick={() => history.push('/account')}>Account</a>
-            <a onClick={() => history.push('/admin')}>Admin</a>
-            <a onClick={firebase.doSignOut}>Sign Out</a>
-            <a onClick={() => history.push('/account')}>Dashboard</a>
-            <a
-              onClick={() => history.push(`/profile/${authUser.uid}`)}
-            >
-              My Profile
-            </a>
-            <a onClick={() => history.push('/auth/my-profile')}>
-              Edit Profile
-            </a>
-          </div>
-        </div>
-      ) : (
-        <div className="header--user-info">
-          <span onClick={() => history.push('/signin')}>Log In</span>{' '}
-          |{' '}
-          <span onClick={() => history.push('/signup')}>Sign Up</span>
-        </div>
-      )}
+      {/* <div className="header--user-info">
+        <span onClick={() => history.push('/signin')}>Log In</span> |{' '}
+        <span onClick={() => history.push('/signup')}>Sign Up</span>
+      </div> */}
     </div>
   );
 };

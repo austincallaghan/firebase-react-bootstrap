@@ -30,20 +30,12 @@ const MobileMenu = ({ toggleMobileMenu, menuOpen, history }) => {
           <a onClick={() => history.push('/about')}>About Us</a>
         </li>
         <li>
-          <a onClick={() => history.push('/artists')}>Artists</a>
+          <a onClick={() => history.push('/gallery')}>Gallery</a>
         </li>
         <li>
-          <a onClick={() => history.push('/studios')}>Studios</a>
-        </li>
-        <li>
-          <a onClick={() => history.push('/tattoos')}>Tattoos</a>
+          <a onClick={() => history.push('/contact')}>Contact</a>
         </li>
       </ul>
-
-      <div className="mobile-menu--footer-links">
-        <div>Privacy Policy</div>
-        <div>FAQ</div>
-      </div>
     </div>
   );
 };

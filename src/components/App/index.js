@@ -26,7 +26,6 @@ const App = props => {
       />
       <Header toggleMobileMenu={toggleMobileMenu} />
       <Routes />
-      {/* <Navigation /> */}
     </BrowserRouter>
   );
 };
